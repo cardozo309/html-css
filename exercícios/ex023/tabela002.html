@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -26,6 +27,12 @@
             background-color: lightgray;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: gray;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -33,6 +40,12 @@
 
         .num{
             text-align: right;
+        }
+
+        tbody tr:nth-child(2n)/* 
+        Estilo para cada segundo elemento filho do elemento pai. posso colocar tb nos parenteses ODD (impar) ou EVEN (par)
+        */{
+            background-color: lightgray;
         }
     </style>
 </head>
